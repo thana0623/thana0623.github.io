@@ -22,6 +22,28 @@
       </tags>
   </entry>
   <entry>
+    <title>[LeetCode] 104. 二叉树的最大深度 (Maximum Depth of Binary Tree)</title>
+    <url>/2026/05/07/leetcode-104-maximum-depth-of-binary-tree/</url>
+    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个二叉树，找出其最大深度。最大深度是从根节点到最远叶节点的最长路径上的节点数。</p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>递归计算左右子树的最大深度，取较大值加 1。</p>
+<ul>
+<li><strong>时间复杂度：</strong> O(n)</li>
+<li><strong>空间复杂度：</strong> O(h)，h 为树的高度</li>
+</ul>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">maxDepth</span>(<span class="params">self, root: <span class="type">Optional</span>[TreeNode]</span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> root:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span> + <span class="built_in">max</span>(<span class="variable language_">self</span>.maxDepth(root.left), <span class="variable language_">self</span>.maxDepth(root.right))</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>二叉树问题的天然解法是递归。理解递归的终止条件和递推关系是关键。</p>
+]]></content>
+      <categories>
+        <category>二叉树</category>
+      </categories>
+      <tags>
+        <tag>Easy</tag>
+        <tag>二叉树</tag>
+        <tag>递归</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>[LeetCode] 5. 最长回文子串 (Longest Palindromic Substring)</title>
     <url>/2026/05/07/leetcode-5-longest-palindromic-substring/</url>
     <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个字符串 <code>s</code>，找到 <code>s</code> 中最长的回文子串。</p>
@@ -46,28 +68,6 @@
         <tag>Medium</tag>
         <tag>动态规划</tag>
         <tag>双指针</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[LeetCode] 104. 二叉树的最大深度 (Maximum Depth of Binary Tree)</title>
-    <url>/2026/05/07/leetcode-104-maximum-depth-of-binary-tree/</url>
-    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个二叉树，找出其最大深度。最大深度是从根节点到最远叶节点的最长路径上的节点数。</p>
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>递归计算左右子树的最大深度，取较大值加 1。</p>
-<ul>
-<li><strong>时间复杂度：</strong> O(n)</li>
-<li><strong>空间复杂度：</strong> O(h)，h 为树的高度</li>
-</ul>
-<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">maxDepth</span>(<span class="params">self, root: <span class="type">Optional</span>[TreeNode]</span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> root:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span> + <span class="built_in">max</span>(<span class="variable language_">self</span>.maxDepth(root.left), <span class="variable language_">self</span>.maxDepth(root.right))</span><br></pre></td></tr></table></figure>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>二叉树问题的天然解法是递归。理解递归的终止条件和递推关系是关键。</p>
-]]></content>
-      <categories>
-        <category>二叉树</category>
-      </categories>
-      <tags>
-        <tag>Easy</tag>
-        <tag>二叉树</tag>
-        <tag>递归</tag>
       </tags>
   </entry>
 </search>
